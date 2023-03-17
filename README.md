@@ -6,6 +6,6 @@ DisplayFilter : Crée la liste des filtres dans chaque composant, c'est à dire 
 
 filterIngredient : Ouverture / Fermeture du dropdown, trie des filtres lorsque l'on clic dessus. Ainsi que le trie lorsque l'on clic sur la croix pour supprimer le tag. Il y a aussi la fonction pour rechercher un ingredient / appareil / ustensiles dans chaque dropdown.
 
-index : Création des recettes.
+index : Création des recettes. Ainsi qu'une fonction fetchData pour récuperer les données du JSON.
 
 searchBarPrincipal : Contient l'algorithme de recherche pour la barre principal. 
