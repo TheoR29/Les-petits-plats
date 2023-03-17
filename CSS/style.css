@@ -158,7 +158,10 @@ main section select {
     height: 364px;
     background: #e7e7e742;
     border-radius: 5px;
+    cursor: pointer;
 }
+.divContainerRecipe:hover {
+    transform: scale(1.1)}
 
 .divNameAndTime {
     display: flex;
