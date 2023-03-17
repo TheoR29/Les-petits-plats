@@ -1,0 +1,220 @@
+:root {
+    --light-grey: #e7e7e7;
+    --dark-grey: #c7bebe;
+    --primary: #3282f7;
+    --success: #68d9a4;
+    --danger: #ed6454;
+    --fs-18: 18px;
+    --fs-12: 12px;
+    --br-5: 5px;
+  }
+  
+  * {
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.colorBlue {
+    background: #3283F7;
+}
+.colorGreen {
+    background: #68D9A4;
+}
+.colorOrange {
+    background: #ED6454;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+header div a {
+    display: flex;
+    justify-content: center;
+}
+
+header div a img {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+#searchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section input {
+    padding: 20px;
+    width: 100%;
+    background: #E7E7E7;
+    border: none;
+}
+
+.searchBtn{
+    position: absolute;
+    left: 93%;
+}
+
+.filter__tagingredients {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: #FFF;
+    width: 170px;
+    height: 40px;
+    border-radius: var(--br-5);
+    font-weight: bold;
+
+}
+.filter__tagappliances {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: 14%;
+    justify-content: center;
+    border-radius: 15%;
+    background: var(--success);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 3rem;
+    padding: 1%;
+
+}
+.filter__tagustensils {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: 14%;
+    justify-content: center;
+    border-radius: 15%;
+    background: var(--danger);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 3rem;
+    padding: 1%;
+
+}
+
+.filter__tag-remove{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+}
+
+main section div p {
+    padding-right: 5px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    gap: 2rem;
+    position: relative;
+}
+
+main section select {
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.recette {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-top: 100px;
+}
+.noRecette{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divContainerRecipe {
+    height: 364px;
+    background: #e7e7e742;
+    border-radius: 5px;
+}
+
+.divNameAndTime {
+    display: flex;
+}
+
+.divDescriptionAndIngredient {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#recette article div div ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 106px;
+    overflow: hidden;
+}
+
+.pDescription {
+    height: 90px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#filter-tags{
+  display: flex;
+}
+
+.divBackground {
+    height: 178px;
+    background-color: #E7E7E7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.divAll {
+    height: 186px;
+    padding: 20px;
+    margin: 0;
+}
+
+#timerIcon{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.ingredientName{
+    font-weight: bold;
+}
+
+
+  

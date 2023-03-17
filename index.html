@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/filterAppareil.css">
+    <link rel="stylesheet" href="./CSS/filterIngredient.css">
+    <link rel="stylesheet" href="./CSS/filterUstensil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f394bff45.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9f394bff45.js" crossorigin="anonymous"></script>
+    <title>Les petits plats </title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="./Images/logo.png" alt="Logo de l'entreprise ainsi que son nom.">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="searchContainer">
+            <input id="searchPrincipal" type="search" placeholder="Rechercher une recette">
+            <i class="fa-solid fa-magnifying-glass searchBtn"></i> 
+        </section>
+
+        <section id="filter-tags">
+        </section>
+
+
+        <section id="filters">
+            <div class="filter__ingredients">
+                <div class="filter__ingredients--template">
+                    <div class="colorBlue filter__ingredients--close" name="ingredients">
+                        <header id="headerIngredient" class="filter__ingredients--header">
+                            <h2 class="filter__ingredients--name"> Ingrédients</h2>
+                            <span class="filter__ingredients--angleDown">
+                                <i class="fa-solid fa-angle-down fa-lg" style="cursor: pointer;" id="openIngredient"></i>
+                            </span>
+                        </header>
+                        <span class="filter__ingredients--angleUp" >
+                            <i class="fa-solid fa-angle-up fa-lg" id="closeIngredient" style="display: none;"></i>
+                        </span>
+                        <input id="inputingredients" type="search" placeholder="Rechercher un ingredients" class="filter__ingredients--input" style="display: none;">
+                        <ul id="ingredients" class="filter__ingredients--list" style="display: none;">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__appliances">
+                <div class="filter__appliances--template">
+                    <div class="colorGreen filter__appliances--close" name="Appareils">
+                        <header id="headerAppareil" class="filter__appliances--header">
+                            <h2 class="filter__appliances--name"> Appareils</h2>
+                            <span class="filter__appliances--angleDown">
+                                <i id="openAppareil" class="fa-solid fa-angle-down fa-lg"></i>
+                            </span>
+                        </header>
+                        <span class="filter__appliances--angleUp" >
+                            <i id="closeAppareil" class="fa-solid fa-angle-up fa-lg" style="display: none;"></i>
+                        </span>
+                        <input id="inputappliances" class="filter__appliances--input" style="display: none;" type="search" placeholder="Rechercher un appareils">
+                        <ul class="filter__appliances--list" style="display: none;" id="Appareils">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__ustensils">
+                <div class="filter__ustensils--template">
+                    <div class="colorOrange filter__ustensils--close" name="Ustensiles">
+                        <header id="headerUstensil" class="filter__ustensils--header">
+                            <h2 class="filter__ustensils--name"> Ustensiles</h2>
+                            <span class="filter__ustensils--angleDown">
+                                <i id="openUstensil" class="fa-solid fa-angle-down fa-lg"></i>
+                            </span>
+                        </header>
+                        <span class="filter__ustensils--angleUp" >
+                            <i id="closeUstensil" class="fa-solid fa-angle-up fa-lg" style="display: none;"></i>
+                        </span>
+                        <input id="inputustensils" class="filter__ustensils--input" style="display: none;" type="search" placeholder="Rechercher un ustensiles">
+                        <ul class="filter__ustensils--list" style="display: none;" id="Ustensiles">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recette" class="recette"></section>
+    </main>
+</body>
+<script src="./JS/index.js"></script>
+<script src="./JS/filterIngredient.js"></script>
+<script src="./JS/displayFilter.js"></script>
+<script src="./JS/createTag.js"></script>
+<script src="./JS/searchBarPrincipal.js"></script>
+
+
+</html>

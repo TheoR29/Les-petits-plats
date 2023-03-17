@@ -1,0 +1,144 @@
+:root {
+    --light-grey: #e7e7e7;
+    --dark-grey: #c7bebe;
+    --primary: #3282f7;
+    --success: #68d9a4;
+    --danger: #ed6454;
+    --fs-18: 18px;
+    --fs-12: 12px;
+    --br-5: 5px;
+  }
+
+.filter__appliances--template {
+    margin-left: 0;
+    width: 170px;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .filter__appliances--template input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .filter__appliances--close {
+    align-items: center;
+    background-color: var(--success);
+    color: #FFF;
+  
+    width: 170px;
+    height: 70px;
+  
+    border-radius: var(--br-5);
+  
+    font-weight: bold;
+  }
+  
+  .filter__appliances--header {
+    display: flex;
+  
+    width: 170px;
+    height: 70px;
+    align-items: center;
+  }
+  
+  .filter__appliances--name {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .filter__appliances--view {
+    flex-direction: column;
+    align-items: center;
+  
+    color: #FFF;
+    background-color: var(--success);
+  
+    font-weight: bold;
+    height: 70px;
+    border-top-left-radius: var(--br-5);
+    border-top-right-radius: var(--br-5);  
+  
+    overflow: hidden;
+  }
+  
+  .filter__appliances--view header h2 {
+    font-weight: normal;
+    font-size: var(--fs-18);
+    margin-right: 0;
+  }
+  
+  .filter__appliances--view header .fa-angle-up {
+    display: none;
+  }
+  
+  .filter__appliances--view input {
+    position: absolute;
+    outline: none;
+  
+    width: 650px;
+    height: 70px;
+  
+    font-size: 1rem;
+  
+    color: #FFF;
+    background-color: var(--success);
+  
+    border: none;
+    border-top-left-radius: var(--br-5);
+    border-top-right-radius: var(--br-5);
+  
+    margin-left: 1rem;
+  }
+  
+  .filter__appliances--angleUp {
+    color: #FFF;
+    position: absolute;
+    left: 825px;
+    top: 34px;
+  
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .filter__appliances--list {
+    background-color: var(--success);
+    overflow: scroll;
+  
+    position: absolute;
+    width: 666px;
+    height: auto;
+    max-height: 275px;
+  
+    flex-wrap: wrap;
+  
+    margin-top: 70px;
+    padding: 0;
+  
+    border-bottom-left-radius: var(--br-5);
+    border-bottom-right-radius: var(--br-5);
+  }
+  
+  .filter__appliances--list li {
+    width: 30%;
+    padding: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+  
+    font-size: var(--fs-18);
+    font-weight: normal;
+  }
+  
+  .filter__appliances--list li::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    transition: 300ms;
+    background-color: #FFF;
+  
+  }
+  
+  .filter__appliances--list li:hover::after {
+    width: 10%;
+  }
+  
